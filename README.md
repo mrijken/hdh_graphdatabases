@@ -1,55 +1,56 @@
 # HDH Graph Databases
 
-## Installatie
-
 Run deze instructie:
 
 - vanaf een OND
 - zonder Pulse
 - zonder Caleidos, dus via een hotspot
 
-### Installatie repo
 
-- clone de repo van github XXX
+## Installatie repo
+
+- clone de repo van github
 - `poetry install`
 
-### Neo4j sandbox & AuraDB
+## Installatie Neo4j Desktop
 
-- ga naar https://sandbox.neo4j.com
-- maak een account
+- installeer Neo4J Desktop via https://neo4j.com/download/
+- start neo4j en voeg de key toe die je krijgt op de download pagina
+- maak nieuw project
+- Voeg Local DBMS toe via Add
+- Start DBMS
 
-#### AuraDB
-- Niet start een nieuwe project maar click grijs knopje "Start Free on AuraDB" aan de rechterkant
-- klick door "start free"
-- je moet inloggen met de sandbox wachtword
-- aan de linkerkant kies AuraDS instances (AuraDS, niet DB) en click een "new instance" knopje
+- Voeg remote DBMS toe met de volgende credentials
+  - NEO4J_URI=neo4j+s://8a1ea02e.databases.neo4j.io
+  - NEO4J_USERNAME=neo4j
+  - NEO4J_PASSWORD=MrxDjChAsBHG-cwg8h89zDtuYLE9QWHVTb2eaQ-MZP4
+  - AURA_INSTANCENAME=form13
 
-- geef de volgende waarden op:
-    - Instance name = form13
-    - Number of nodes = 500000
-    - Number of relationships = 1000000
-    - tick "Node Embedding" plaatje aan
 
-- click door naar calculate estimate en verder create instance
-    - je kan gevraagd worden om de Credit Card gegevens in te vullen (zal niet gecharged worden)
-- vergeet niet de DB wachtwoord te kopieren
+Bekijke https://docs.google.com/presentation/d/1WvPzs_JEh8uuKEAQGecH1rUd1NoRzqZIKc-hQkuBdXQ/edit?usp=sharing
 
-### Upload de data
-- als de DB instance is aangemaakt en draait, klik dan op het query knopje - dat opent de query-editor in het nieuwe browservenster
-- heir heb je de DB wachtwoord nodig om connectie te maken
-- als connectie is gelukt, kan je de data uploaden, volg dan deze instructies https://github.com/neo4j-partners/hands-on-lab-neo4j-and-vertex-ai/tree/main/Lab%203%20-%20Moving%20Data
+## Upload en browse data
 
-### Graph Data Exploration
-- om visuele (graph) data exploratie te doen, click het "Bloom" knopje op de DB console pagina
-- volg deze instructies: https://github.com/neo4j-partners/hands-on-lab-neo4j-and-vertex-ai/blob/main/Lab%204%20-%20Exploration/README.md
+Bekijk https://docs.google.com/presentation/d/1O6Oy_GbDYYCvQanUyUCl30hQdSsy9kKL53Jgl23Nnsk/edit?usp=sharing
 
-### Node Embeddings
+Volg de instructies op https://github.com/neo4j-partners/hands-on-lab-neo4j-and-vertex-ai/tree/main/Lab%203%20-%20Moving%20Data
+met de lokale dbs en stop bij "A Year of Data".
 
-- open en run de `node_embeddings.ipynb` notebook om de graph embeddings aan te maken
-- als je klaar bent en de `embedding.csv` is opgeslagen, kan je de AuraDB instance stoppen
-- ga terug naar de AuraDB console window en druk rood prullenbak knopje
-- controleer of de DB instance is vernietigd (er zijn geen instanties meer zichtbaar op de pagina)
+Wij hebben "A Year of Data" voor je gereed gezet op de remote DBMS; de lokale dbms is te klein.
+## Exploratie
 
-### Data Science
-- Nu is het moment gekomen om onze graph embeddings aan het voorspellingsmodel toe te voegen en te proberen te voorspellen welke holdings door de vermogensbeheerders zullen worden geschrapt. Gebruik je favoriete classifier en creativiteit! :)
-- Deze code kan je waarschijnlijk helpen met het opschonen en voorbereiden van de data: https://github.com/neo4j-partners/neo4j-sec-edgar-form13/blob/main/featurize/featurize.py
+Open Bloom van de Remote DBMS via Neo4j Desktop en volg de instructies op
+- https://github.com/neo4j-partners/hands-on-lab-neo4j-and-vertex-ai/tree/main/Lab%204%20-%20Exploration
+- exploring_cypher.ipynb
+- exploring_pandas.ipynb
+
+## Graph Data Science
+
+Bekijk https://docs.google.com/presentation/d/133tXAH--V7Uvyd0Ylhs08_xDEPfl64uvaNNdxeHVpvk/edit?usp=sharing
+
+- Volg embeddings.ipynb
+- Nu is het moment gekomen om onze graph embeddings aan het voorspellingsmodel toe te voegen en te proberen te
+  voorspellen welke holdings door de vermogensbeheerders zullen worden geschrapt. Gebruik je favoriete classifier
+  en creativiteit! :)
+- Deze code kan je waarschijnlijk helpen met het opschonen en voorbereiden van de
+  data: https://github.com/neo4j-partners/neo4j-sec-edgar-form13/blob/main/featurize/featurize.py
