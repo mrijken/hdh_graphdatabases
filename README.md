@@ -21,9 +21,9 @@ Run deze instructie:
 - Start DBMS
 
 - Voeg remote DBMS toe met de volgende credentials
-  - NEO4J_URI=neo4j+s://8a1ea02e.databases.neo4j.io
+  - NEO4J_URI=neo4j+s://<to be disclosed during hdh>.databases.neo4j.io
   - NEO4J_USERNAME=neo4j
-  - NEO4J_PASSWORD=MrxDjChAsBHG-cwg8h89zDtuYLE9QWHVTb2eaQ-MZP4
+  - NEO4J_PASSWORD=<to be disclosed during hdh>
   - AURA_INSTANCENAME=form13
 
 
