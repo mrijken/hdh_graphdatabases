@@ -29,6 +29,11 @@ Run deze instructie:
 
 Bekijke https://docs.google.com/presentation/d/1WvPzs_JEh8uuKEAQGecH1rUd1NoRzqZIKc-hQkuBdXQ/edit?usp=sharing
 
+## Data
+
+De dataset bevat de kwartaalaangiften van vermogensbeheerders met meer dan 100 miljoen dollar beheerd vermogen. Dit zijn deponeringen bij het EDGAR-systeem van de Securities and Exchange Commission (SEC) - de openbare deponeringen van iets dat Form 13 wordt genoemd. Vermogensbeheerders met meer dan $100m assets under management (AUM) moeten elk kwartaal formulier 13 indienen. Dat is dan beschikbaar voor het publiek via http.
+Ons doel is om de relaties van verschillende vermogensbeheerders en hun holdings te onderzoeken in een graph representatie. Verder proberen we met graph node embeddings te voorspellen welke holdings vermogensbeheerders in het volgende kwartaal zullen aanhouden.
+
 ## Upload en browse data
 
 Bekijk https://docs.google.com/presentation/d/1O6Oy_GbDYYCvQanUyUCl30hQdSsy9kKL53Jgl23Nnsk/edit?usp=sharing
