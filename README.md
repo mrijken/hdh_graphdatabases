@@ -44,6 +44,9 @@ Open Bloom van de Remote DBMS via Neo4j Desktop en volg de instructies op
 - exploring_cypher.ipynb
 - exploring_pandas.ipynb
 
+### Exploratie Deep Dive - Graph Algorithms
+- exploring_graph_algorithms.ipynb
+
 ## Graph Data Science
 
 Bekijk https://docs.google.com/presentation/d/133tXAH--V7Uvyd0Ylhs08_xDEPfl64uvaNNdxeHVpvk/edit?usp=sharing
